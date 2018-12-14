@@ -17,6 +17,7 @@ class CreateRoomsTable extends Migration
             $table->increments('id');
             $table->string ('room_name');
             $table->string ('password');
+            $table->boolean ('build_flg');
             $table->timestamps();
         });
     }

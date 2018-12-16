@@ -8,7 +8,7 @@ class Room extends Model
 {
     protected $table = "rooms";
 
-    public function people ($query, $str) {
-        return $this->hasMany ('App\Person');
+    public function people () {
+        return $this->hasOne ('App\Person');
     }
 }

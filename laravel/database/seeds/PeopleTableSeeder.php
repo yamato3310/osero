@@ -15,7 +15,7 @@ class PeopleTableSeeder extends Seeder
         $param = [
             "name" => "yamato",
             "color" => "white",
-            "team" => 1
+            "room_id" => 1
         ];
        $person = new Person;
        $person->fill ($param)->save ();
@@ -23,7 +23,7 @@ class PeopleTableSeeder extends Seeder
         $param = [
             "name" => "hoge",
             "color" => "white",
-            "team" => 2
+            "room_id" => 2
         ];
        $person = new Person;
        $person->fill ($param)->save ();
@@ -31,7 +31,7 @@ class PeopleTableSeeder extends Seeder
         $param = [
             "name" => "huga",
             "color" => "white",
-            "team" => 3
+            "room_id" => 3
         ];
        $person = new Person;
        $person->fill ($param)->save ();
@@ -39,7 +39,7 @@ class PeopleTableSeeder extends Seeder
         $param = [
             "name" => "hage",
             "color" => "black",
-            "team" => 4
+            "room_id" => 4
         ];
        $person = new Person;
        $person->fill ($param)->save ();

@@ -32,6 +32,6 @@ class RoomController extends Controller
         $room = Room::name ($form["name"])->flg (1)->roomName ($form["room_name"])->first ();
         $person->room_id = $room->id;
         $person->save ();
-        return redirect ("/room");
+        return view ("roomDetails", ["room" => $room]);
     }
 }

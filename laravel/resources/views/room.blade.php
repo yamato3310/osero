@@ -11,7 +11,7 @@
         <a href="/">topページへ</a>
         <div>
             @foreach ($rooms as $room)
-            <a href="#">
+            <a href="#{{$room->id}}">
                 <table class="table">
                     <tr>
                         <td>ルームネーム</td>
@@ -21,6 +21,7 @@
                         <td>製作者</td>
                         <td>{{$room->name}}</td>
                     </tr>
+
                 </table>
             </a>
             @endforeach

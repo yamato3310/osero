@@ -16,6 +16,10 @@ class BroadcastServiceProvider extends ServiceProvider
     {
         Broadcast::routes();
 
+        Broadcast::channel('order.*', function ($user, $room) {
+            return $user->room_id === $room->id;
+        });
+
         require base_path('routes/channels.php');
     }
 }

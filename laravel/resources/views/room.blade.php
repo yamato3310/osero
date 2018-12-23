@@ -11,7 +11,7 @@
         <a href="/">topページへ</a>
         <div>
             @foreach ($rooms as $room)
-            <a href="#{{$room->id}}">
+            <a href="/waitingRoom?id={{$room->id}}">
                 <table class="table">
                     <tr>
                         <td>ルームネーム</td>

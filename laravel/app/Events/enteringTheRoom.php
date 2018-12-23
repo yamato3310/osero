@@ -20,9 +20,10 @@ class enteringTheRoom implements ShouldBroadcast
      * @return void
      */
     protected $room_id;
-    public function __construct($room)
+
+    public function __construct($id)
     {
-        $this->room_id = $room->id;
+        $this->room_id = $id;
     }
 
     /**
@@ -32,6 +33,6 @@ class enteringTheRoom implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('order' . $this->$room_id);
+        return new PrivateChannel('order.' . $this->room_id);
     }
 }

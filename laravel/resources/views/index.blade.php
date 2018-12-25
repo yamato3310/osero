@@ -1,4 +1,3 @@
 <body>
-    topページだよ
-    <a href="/room"></a>
+    <a href="/room">topページだよ</a>
 </body>
